@@ -43,7 +43,7 @@ jobs:
     - uses: actions/upload-artifact@v4
       with:
          name: Containerfile
-         path: ./Containerfile
+         path: Containerfile
 
     - name: Generate image name
       run: |
@@ -79,8 +79,8 @@ jobs:
       id: push
       uses: docker/build-push-action@v6
       with:
-        # context: .
-        file: ./Containerfile
+        context: .
+        file: Containerfile
         push: ${{ github.event_name != 'pull_request' }}
         tags: ${{ steps.docker_meta.outputs.tags }}
         labels: ${{ steps.docker_meta.outputs.labels }}
