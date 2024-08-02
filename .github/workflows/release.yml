@@ -44,7 +44,7 @@ jobs:
         with:
             # context: .
             name: Containerfile
-            path: Containerfile
+            path: ./Containerfile
 
       - name: Create Release
         env:
