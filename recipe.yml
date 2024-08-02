@@ -19,7 +19,9 @@ stages:
     commands:
     - echo 'PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"' > /etc/environment
     - sed -i '4,10d' /etc/profile
-    - echo "deb https://ppa.launchpadcontent.net/ubuntudde-dev/stable/ubuntu lunar main" > /etc/apt/source.list
+    - apt update
+    - apt install software-properties-common -y
+    - add-apt-repository ppa:ubuntudde-dev/stable
     - apt update
     - apt upgrade -y
     - apt clean
