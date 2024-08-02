@@ -1,0 +1,8 @@
+name: other-utils
+type: apt
+source:
+  packages:
+  - hyfetch
+  - zsh
+  
+
