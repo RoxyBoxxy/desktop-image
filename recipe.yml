@@ -56,7 +56,7 @@ stages:
       - modules/03-fswarn.yml
       - modules/10-vanilla-abroot-rollback-notifier.yml
       - modules/20-ubuntudde-core.yml
-      - modiles/21-other-utils.yml
+      - modules/21-other-utils.yml
       - modules/50-laptop-goodies.yml
       - modules/60-media.yml
       - modules/80-printers.yml
