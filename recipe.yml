@@ -1,9 +1,9 @@
-name: Vanilla Desktop
+name: Puppygirl Desktop
 id: desktop
 
 stages:
 - id: build
-  base: ghcr.io/vanilla-os/core:main
+  base: ghcr.io/roxyboxxy/core:main
   singlelayer: false
   labels:
     maintainer: Vanilla OS Contributors
