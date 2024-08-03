@@ -2,13 +2,12 @@ name: gnome-core
 type: apt
 source:
   packages:
-  - gdm3
+  - sddm
   - xorg
 
-  - gnome-session
-  - gnome-shell
-  - gnome-shell-extensions
-  - gnome-browser-connector
+  - plasma-workspace-wayland
+  - kde-plasma-desktop
+  - kde-standard
 
   - dbus-x11
   - evolution-data-server
