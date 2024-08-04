@@ -1,8 +1,0 @@
-name: gnome-core
-type: apt
-source:
-  packages:
-  - gdm3
-  - xorg
-
-  - ubuntudde-dde
