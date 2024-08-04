@@ -38,13 +38,6 @@ stages:
     - chmod +x /usr/bin/lpkg
     - chmod +x /usr/bin/cur-gpu
 
-  - name: linux-surface-repo
-    type: shell
-    commands:
-    - curl -fSsL https://raw.githubusercontent.com/linux-surface/linux-surface/master/pkg/keys/surface.asc | gpg --dearmor -o /usr/share/keyrings/linux-surface.gpg
-    - echo 'deb [signed-by=/usr/share/keyrings/linux-surface.gpg] https://pkg.surfacelinux.com/debian release main' > /etc/apt/sources.list.d/linux-surface.list
-    - apt-get update
-
   - name: packages-modules
     type: includes
     includes:
@@ -80,7 +73,6 @@ stages:
       - modules/170-gnome-software-vso-plugin.yml
       - modules/200-gnome-common.yml
       - modules/210-libs-extra.yml
-      - modules/211-kernal-swap.yml
       - modules/998-vanilla-cleanup.yml
       - modules/999-pkg-cleanup.yml
       - modules/999-clear-first-setup-steps-unit.yml
