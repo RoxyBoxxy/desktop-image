@@ -4,4 +4,3 @@ commands:
 - apt remove -y zutty gnome-shell-extension-prefs gdm3
 - SUDO_FORCE_REMOVE=yes apt purge -y sudo
 - echo 'NoDisplay=true' >> /usr/share/applications/software-properties-gtk.desktop
-- rm /etc/systemd/system/display-manager.service
