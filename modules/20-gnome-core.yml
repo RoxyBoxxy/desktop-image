@@ -1,0 +1,20 @@
+name: gnome-core
+type: apt
+source:
+  packages:
+  - sddm
+  - xorg
+
+  - plasma-workspace-wayland
+  - kde-plasma-desktop
+  - kde-standard
+
+  - dbus-x11
+  - evolution-data-server
+  - geoclue-2.0
+  - gjs
+  - mutter
+  - xdg-desktop-portal
+  - xdg-desktop-portal-gnome
+  - xdg-desktop-portal-gtk
+
